@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Works on JoyyyJen</title>
+    <link>/work/</link>
+    <description>Recent content in Works on JoyyyJen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Mar 2019 21:09:03 -0600</lastBuildDate>
+    
+	<atom:link href="/work/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spin Intern: Speech-to-Text Auto-Captioning</title>
+      <link>/work/spin-intern/</link>
+      <pubDate>Fri, 01 Mar 2019 21:09:03 -0600</pubDate>
+      
+      <guid>/work/spin-intern/</guid>
+      <description>Job Description Employer: National Center For Supercomputing Application
+Project Title: Speech-To-Text Auto Captioning
+Summary:
+- Researching frameworks and workflow for Automatic Speech Recognition (ASR) in order to facilitate live auto captioning and create caption files
+- Developing ASR application based on CMUSphinx Open Source Speech Recognition system
+- Building domain-specific speech and text corpus for phonetics dictionary and acoustics model
+- Comparing and evaluating the models difference to get the better training result</description>
+    </item>
+    
+  </channel>
+</rss>

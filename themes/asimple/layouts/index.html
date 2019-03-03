@@ -1,0 +1,23 @@
+{{ partial "header.html" . }}
+<div class="main">
+    <article>
+        {{ range first 10 .Data.Pages }}
+        {{ if eq .Type "post"}}
+        <div class="article-item">
+            <a href="{{ .Permalink }}" class = "title">{{ .Title }}</a>
+            <div class="status"> {{ .Date }}</div>
+            <div class="content"> {{.Summary}} </div>
+        </div>
+        {{ end }}
+        {{ end }}
+        <div class="article-item">
+            <a href="article2.html" class="title">睡覺的學問</a>
+            <div class="status">發佈於2015.6.27 閱讀人數:700</div>
+            <div class="content">A haiku written by Ray Kurzweil's Cybernetic Poet after reading poems by Kathleen
+                Frances Wheeler. I shall be telling this with a sigh Somewhere ages and ages hence: Two roads diverged
+                in a wood, and I— I took the one less travelled by, And that has made all the difference.
+            </div>
+        </div>
+    </article>
+</div>
+{{ partial "footer.html" . }}
