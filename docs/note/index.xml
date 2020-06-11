@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes on JoyyyJen</title>
-    <link>https://joyyyjen.github.io/ajoy/note/</link>
+    <link>https://joyyyjen.github.io/note/</link>
     <description>Recent content in Notes on JoyyyJen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 09 May 2019 22:45:08 -0500</lastBuildDate>
     
-	<atom:link href="https://joyyyjen.github.io/ajoy/note/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joyyyjen.github.io/note/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Chatbot Ethical Concern</title>
-      <link>https://joyyyjen.github.io/ajoy/note/chatbot_ethical_concern/</link>
+      <link>https://joyyyjen.github.io/note/chatbot_ethical_concern/</link>
       <pubDate>Thu, 09 May 2019 22:45:08 -0500</pubDate>
       
-      <guid>https://joyyyjen.github.io/ajoy/note/chatbot_ethical_concern/</guid>
+      <guid>https://joyyyjen.github.io/note/chatbot_ethical_concern/</guid>
       <description>I have been making a Facebook Fan Page Chatbot using Dexter, a platform people can create automated conversation. The purpose of this robot is to help to answer questions from Taiwanese Students who study at the University of Illinois. It especially targets the frequent ask questions from Taiwanese Student Association Facebook Fan Page.
 There are two common approaches to build a chatbot. Some use natural language processing systems, others use rule-based pattern matching from a database.</description>
     </item>
     
     <item>
       <title>Ethics 倫理/ 機械論理學</title>
-      <link>https://joyyyjen.github.io/ajoy/note/ethics/</link>
+      <link>https://joyyyjen.github.io/note/ethics/</link>
       <pubDate>Wed, 20 Feb 2019 22:13:43 -0600</pubDate>
       
-      <guid>https://joyyyjen.github.io/ajoy/note/ethics/</guid>
+      <guid>https://joyyyjen.github.io/note/ethics/</guid>
       <description>&lt;h2 id=&#34;ethics-倫理&#34;&gt;Ethics 倫理&lt;/h2&gt;
 
 &lt;ul&gt;

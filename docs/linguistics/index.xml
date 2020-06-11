@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linguistics on JoyyyJen</title>
-    <link>https://joyyyjen.github.io/ajoy/linguistics/</link>
+    <link>https://joyyyjen.github.io/linguistics/</link>
     <description>Recent content in Linguistics on JoyyyJen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Mar 2019 17:23:06 -0500</lastBuildDate>
     
-	<atom:link href="https://joyyyjen.github.io/ajoy/linguistics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joyyyjen.github.io/linguistics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Finite State Network</title>
-      <link>https://joyyyjen.github.io/ajoy/linguistics/finite-state-network/</link>
+      <link>https://joyyyjen.github.io/linguistics/finite-state-network/</link>
       <pubDate>Mon, 25 Mar 2019 17:23:06 -0500</pubDate>
       
-      <guid>https://joyyyjen.github.io/ajoy/linguistics/finite-state-network/</guid>
+      <guid>https://joyyyjen.github.io/linguistics/finite-state-network/</guid>
       <description>&lt;h3 id=&#34;finite-state-network-有限狀態機&#34;&gt;Finite-State Network 有限狀態機&lt;/h3&gt;
 
 &lt;p&gt;有限狀態機在詞法學上的應用：&lt;br /&gt;
@@ -32,7 +32,7 @@
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://joyyyjen.github.io/ajoy/FSA.png&#34; alt=&#34;img1&#34; /&gt;&lt;br /&gt;
+&lt;p&gt;&lt;img src=&#34;https://joyyyjen.github.io/FSA.png&#34; alt=&#34;img1&#34; /&gt;&lt;br /&gt;
 - O is the start state&lt;br /&gt;
 - 25 is the end state (double circle)&lt;/p&gt;
 
@@ -53,10 +53,10 @@ epsilon symbol: the empty string, transition without any symbol being consumed&l
     
     <item>
       <title>Language Model</title>
-      <link>https://joyyyjen.github.io/ajoy/linguistics/language-model/</link>
+      <link>https://joyyyjen.github.io/linguistics/language-model/</link>
       <pubDate>Sun, 03 Mar 2019 19:44:13 -0600</pubDate>
       
-      <guid>https://joyyyjen.github.io/ajoy/linguistics/language-model/</guid>
+      <guid>https://joyyyjen.github.io/linguistics/language-model/</guid>
       <description>&lt;p&gt;1954 年的時候，IBM-Georgetown 展示了他們機器翻譯，就此，掀起了機器翻譯的熱潮。這股熱潮，最終被1966年的ALPAC Report 終結，直到研究人員開始使用統技方法取代基於規則方法。然後，早在1949年，就有學者提出多語義的解決辦法。瓦倫·韋弗在他1949年備忘錄提到：&lt;br /&gt;
 &amp;gt; If one examines the words in a book, one at a time through an opaque mask with a hole in it one word wide, then it is obviously impossible to determine, one at a time, the meaning of words. &#39;Fast&#39; may mean &#39;rapid&#39;; or it may mean &#39;motionless&#39;; and there is no way of telling which. &amp;quot;But, if one lengthens, the slit in the opaque mask, until one can see not only the central word in question but also say N words on either side, then if N is large enough one can unambiguously decide the meaning...&amp;quot;&lt;/p&gt;
 
@@ -75,10 +75,10 @@ epsilon symbol: the empty string, transition without any symbol being consumed&l
     
     <item>
       <title>語言的差異 – 屈折</title>
-      <link>https://joyyyjen.github.io/ajoy/linguistics/intro/</link>
+      <link>https://joyyyjen.github.io/linguistics/intro/</link>
       <pubDate>Mon, 18 Feb 2019 18:47:15 -0600</pubDate>
       
-      <guid>https://joyyyjen.github.io/ajoy/linguistics/intro/</guid>
+      <guid>https://joyyyjen.github.io/linguistics/intro/</guid>
       <description>&lt;p&gt;英文學了這麼久，我還是會常常在說話時忘記單複數，性別，時態的詞形變化。像是可能會說成，He do his homework.&lt;br /&gt;
 這一兩年在很不專業的學德文，發現除了單複數和性別之外，又有要背的東西了…&lt;br /&gt;
 我們說，中文是沒有屈折變化的語言。在許多語言中，屈折可以表示時態，格位，數，性別。其中包含名詞詞形變化，形容詞詞形變化，動詞詞形變化等。&lt;/p&gt;</description>
@@ -86,10 +86,10 @@ epsilon symbol: the empty string, transition without any symbol being consumed&l
     
     <item>
       <title>合成詞 :  分辨合成詞和單字形成的其它方式。</title>
-      <link>https://joyyyjen.github.io/ajoy/linguistics/lexeme-formation-compounding/</link>
+      <link>https://joyyyjen.github.io/linguistics/lexeme-formation-compounding/</link>
       <pubDate>Wed, 28 Feb 2018 12:24:29 -0600</pubDate>
       
-      <guid>https://joyyyjen.github.io/ajoy/linguistics/lexeme-formation-compounding/</guid>
+      <guid>https://joyyyjen.github.io/linguistics/lexeme-formation-compounding/</guid>
       <description>合成詞/複合詞 Compound : 以兩個或兩個以上的詞根組成的單詞。
 合成 Compounding : 一種形成單詞的方式。
 在英文中，我們一般用自由詞根來形成合成詞，例如: apple pie, ice cream
@@ -107,10 +107,10 @@ epsilon symbol: the empty string, transition without any symbol being consumed&l
     
     <item>
       <title>詞綴 : 基本概念與特立獨行的其他例子</title>
-      <link>https://joyyyjen.github.io/ajoy/linguistics/affixation/</link>
+      <link>https://joyyyjen.github.io/linguistics/affixation/</link>
       <pubDate>Fri, 23 Feb 2018 01:45:28 -0600</pubDate>
       
-      <guid>https://joyyyjen.github.io/ajoy/linguistics/affixation/</guid>
+      <guid>https://joyyyjen.github.io/linguistics/affixation/</guid>
       <description>&lt;h5 id=&#34;我是小公告&#34;&gt;我是小公告&lt;/h5&gt;
 
 &lt;p&gt;[完全因為是英文教學，而且在構詞這方面，英文跟中文真的有很大的差別，所以我打算先用英文為例子講這些構詞的語法，並在第二段補充中文的構詞。（應該會在1-2周內更新中文構詞部分）]{style=&amp;quot;font-size: small;&amp;quot;}&lt;/p&gt;
@@ -147,10 +147,10 @@ Bound morpheme&lt;strong&gt;規範詞素&lt;/strong&gt;: 不能夠單獨地構�
     
     <item>
       <title>構詞學是什麼 - 關於構詞的基本概念</title>
-      <link>https://joyyyjen.github.io/ajoy/linguistics/what-is-morphology/</link>
+      <link>https://joyyyjen.github.io/linguistics/what-is-morphology/</link>
       <pubDate>Tue, 20 Feb 2018 23:43:29 -0600</pubDate>
       
-      <guid>https://joyyyjen.github.io/ajoy/linguistics/what-is-morphology/</guid>
+      <guid>https://joyyyjen.github.io/linguistics/what-is-morphology/</guid>
       <description>&lt;h3 id=&#34;什麼是構詞學&#34;&gt;什麼是構詞學?&lt;/h3&gt;
 
 &lt;p&gt;A: 構詞學研究單詞的形成方法。&lt;/p&gt;
@@ -183,10 +183,10 @@ Bound morpheme&lt;strong&gt;規範詞素&lt;/strong&gt;: 不能夠單獨地構�
     
     <item>
       <title>歧義 : 從台語聊聊「甲飽三粒」在語言學中的解釋</title>
-      <link>https://joyyyjen.github.io/ajoy/linguistics/ambiguous-in-taiwanese/</link>
+      <link>https://joyyyjen.github.io/linguistics/ambiguous-in-taiwanese/</link>
       <pubDate>Sat, 03 Feb 2018 03:30:28 -0600</pubDate>
       
-      <guid>https://joyyyjen.github.io/ajoy/linguistics/ambiguous-in-taiwanese/</guid>
+      <guid>https://joyyyjen.github.io/linguistics/ambiguous-in-taiwanese/</guid>
       <description>&lt;p&gt;聊聊 歧義 這回事，&lt;br /&gt;
 昨天把從美國帶的藥拿給了大阿姨，他們在看一天要吃幾顆，什麼時候吃。&lt;br /&gt;
 吃飽後吃三粒藥&lt;br /&gt;
@@ -197,10 +197,10 @@ Bound morpheme&lt;strong&gt;規範詞素&lt;/strong&gt;: 不能夠單獨地構�
     
     <item>
       <title>語言學家在幹嘛 ？ 職業常見問題的應答</title>
-      <link>https://joyyyjen.github.io/ajoy/linguistics/what-does-a-linguist-do/</link>
+      <link>https://joyyyjen.github.io/linguistics/what-does-a-linguist-do/</link>
       <pubDate>Fri, 12 Jan 2018 14:08:39 -0600</pubDate>
       
-      <guid>https://joyyyjen.github.io/ajoy/linguistics/what-does-a-linguist-do/</guid>
+      <guid>https://joyyyjen.github.io/linguistics/what-does-a-linguist-do/</guid>
       <description>&lt;p&gt;[前幾天去圖書館翻了一本 &lt;em&gt;The Phonology of Standard Chinese&lt;/em&gt; 來看，想說可以排解一下課上聲韻學的無趣，但讀了讀只覺得，「糟糕，我連自己母語的聲韻都搞不懂」。有趣的是，之前借這本書的某個人，在這個地方畫下重點，還寫上注音。原來在不知道多少年前，有個可能是台灣人的，拿著這本書在研究。]{style=&amp;quot;color: #000000;&amp;quot;}&lt;/p&gt;
 
 &lt;p&gt;[（我算是第一個在這本書上貼上借閱條的人，我有問說「我是第一個借這本書的人嗎？」圖書館員說只是之前借的人覺得不用借閱條罷了）]{style=&amp;quot;color: #000000;&amp;quot;}&lt;/p&gt;
@@ -216,10 +216,10 @@ Bound morpheme&lt;strong&gt;規範詞素&lt;/strong&gt;: 不能夠單獨地構�
     
     <item>
       <title>什麼是語言學？</title>
-      <link>https://joyyyjen.github.io/ajoy/linguistics/what-is-linguistics/</link>
+      <link>https://joyyyjen.github.io/linguistics/what-is-linguistics/</link>
       <pubDate>Fri, 12 Jan 2018 14:08:20 -0600</pubDate>
       
-      <guid>https://joyyyjen.github.io/ajoy/linguistics/what-is-linguistics/</guid>
+      <guid>https://joyyyjen.github.io/linguistics/what-is-linguistics/</guid>
       <description>&lt;h3 id=&#34;一個簡單概括的語言學&#34;&gt;一個簡單概括的語言學。&lt;/h3&gt;
 
 &lt;p&gt;這暑假我實習的公司是一個語言學習的平台。他們有個特別的部門是語言學部門，但除了我之外的所有人基本是中文系，英文系，應用外語系等。有注意到台灣大學基本沒有語言學系。近幾年這是一個在速度發展的科系，尤其因爲AI的關係。&lt;br /&gt;
