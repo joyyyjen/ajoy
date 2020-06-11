@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="/img/dp.png" type="image/x-icon" />
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-113303558-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-113303558-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+    <title>
+      
+      Chatbot Ethical Concern - JoyyyJen
+      
+    </title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Caveat|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="page-template">
+        <header class="main-header">
+
+	<div class="main-header-content">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           JoyyyJen
+				
+			</a>
+		</h1>
+		<h2 class="blog-description">四處瞧瞧，寫寫看看，就醉了</h2>
+	</div>
+
+	<div class="nav">
+    
+		
+      <a class="nav- " role="presentation" href="/">About Me</a>
+		
+      <a class="nav- " role="presentation" href="/linguistics/">Linguistics</a>
+		
+      <a class="nav- " role="presentation" href="/note/">Notes</a>
+		
+      <a class="nav- " role="presentation" href="/poem/">Poems</a>
+		
+		<a class="nav- " role="presentation" href="http://portfolio.ajoy.me/">Portfolio</a>
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post page">
+    <header class="post-header">
+      <h2 class="post-title">Chatbot Ethical Concern</h2>
+    </header>
+    <section class="post-content">
+      
+
+<p>I have been making a Facebook Fan Page Chatbot using Dexter, a platform people can create automated conversation. The purpose of this robot is to help to answer questions from Taiwanese Students who study at the University of Illinois. It especially targets the frequent ask questions from Taiwanese Student Association Facebook Fan Page.</p>
+
+<p>There are two common approaches to build a chatbot. Some use <strong>natural language processing</strong> systems, others use <strong>rule-based</strong> pattern matching from a database.</p>
+
+<p>Thus, before I started writing the content of this robot, I decided to download the facebook page message history. One of my friends told me that it can be illegal. I discussed it with my Information Science Professors, Professor Emily Knox, and Professor Judith Pintar. Both of them told me this can be an ethical issue.</p>
+
+<p>It’s not illegal because it’s mentioned in <a href="https://www.facebook.com/full_data_use_policy">Facebook’s Terms of Service</a><br />
+Yet, even though Facebook Privacy Term mentions that Facebook is collecting the data. Generally, the users might feel bad finding out we analyzed it without their approvals.</p>
+
+<p>In the big data era, computer scientist, mathematicians, sociologists, and other scholars are looking for access to the massive quantities of information produced by and about people, things,<br />
+and their interactions. <strong>Danah Boyd &amp; Kate Crawford</strong> points out that <strong>&quot;Just because it is accessible does not make it ethical&quot;</strong>. They gave an example of a Harvard-based research group research in 2006. In this research, they gather the profiles of 1700 college-based Facebook users to study how their interests and friendships changed over time(Lewis et al. 2008). Some other researchers found out that none of the students were aware that their data were being collected (Zimmer 2008).</p>
+
+<p>To download Facebook Fan Page Message, I used Facebook Graph API and a <a href="https://github.com/eisenjulian/fb-page-chat-download">python script-FB page chat download</a> that I found on GitHub.</p>
+
+<ul>
+<li>Go to <a href="https://developers.facebook.com/tools/explorer">https://developers.facebook.com/tools/explorer</a> and click 'Get User Access Token'<br /></li>
+<li>Make sure to check 'manage_pages' and 'read_page_mailboxes'<br /></li>
+<li>Switch to a page that you want to scrape<br /></li>
+<li>Get the page_id and the access token to pass as parameters to the script<br />
+<br /></li>
+</ul>
+
+<p><img src="/fb-permission.png" alt="img1" /></p>
+
+<p>Normally, when we start to use a new APP on Facebook, it asks for users permission 'X would like to  ____ and ____' or 'X will receive ____'.</p>
+
+<p><img src="/fb-permission2.png" alt="img2" /></p>
+
+<p>It's not the case for an &quot;in development App&quot;. It does not limit our access to the data without asking users' permission.</p>
+
+<h3 id="why-it-mattered">Why it mattered?</h3>
+
+<p>There is a link to a private policy for each Facebook Fan Page,.</p>
+
+<p><img src="/privacy-policy.png" alt="img3" /></p>
+
+<p>When we deploy an APP on facebook, it requires us to prepare a private policy.<br />
+In section <a href="https://www.facebook.com/policies/pages_groups_events/">4. Collection of Data on Pages, Groups, and Events</a>: Collecting Data From Users pages, groups, event of Facebook Policies, Facebook states: &quot;If you collect content and information directly from users, your Page, Group or Event must make it clear that you (and not Facebook) are collecting it, and must provide notice about and obtain user consent for your use of the content and information that you collect.&quot;</p>
+
+<p>When we request information from users through Facebook, this action triggers several laws aiming at protecting personal information. One of those is the General Data Protection Regulation (GDPR). This applies to all of the EU member states.</p>
+
+<p>Laws related to privacy that I can think of in America are the Computer Fraud and Abuse Act (“CFAA”) and the California Consumer Protection Act (CCPA).</p>
+
+<p>California Consumer Protection Act, which will take effect in 2020, limits companies’ use of customer data and require businesses to give consumers more control over it. Maybe other states will follow up or federal privacy will be legislated.</p>
+
+<p>CFAA punishes who &quot;intentionally accesses a computer without authorization or exceeds authorized access, and thereby obtains…information from any protected computer.” One of the cases about CFAA is &quot;hiQ Labs, Inc vs. LinkedIn Corporation”. HiQ Labs is a business that relies on data-scraping on LinkedIn public data.</p>
+
+<p>I am not sure how many people notice this issue when downloading Facebook data. At least from the instruction in the python script I found, it did not point out anything related to ethical or policy regarding the data scraping.</p>
+
+<p>If you are interested in my process of the chatbot project, you can find it here: <a href="https://portfolio.ajoy.me/project/chatbot/">https://portfolio.ajoy.me/project/chatbot/</a></p>
+
+<h3 id="reference">Reference:</h3>
+
+<ul>
+<li>Lewis, K., Kaufman, J., Gonzalez, M., Wimmer, A. &amp; Christakis, N. (2008)‘Tastes, ties, and time: a new social network dataset using Facebook.com’,<em>Social Networks</em>, vol. 30, no. 4, pp. 330–342.<br /></li>
+<li>Zimmer, M. (2008) ‘More on the “Anonymity” of the Facebook dataset – it’s Harvard College’, <em>MichaelZimmer.org Blog</em>, <a href="http://www.michaelzimmer.org/2008/01/03/more-on-the-anonymity-of-the-facebook-dataset-its-harvard-college/">Online</a> (20 June 2011).<br /></li>
+<li>boyd, d. &amp; Crawford, K. (2012). Critical questions for big data: Provocations for a cultural, technological, and scholarly phenomenon. <em>Information, Communication &amp; Society, 15</em>(5), 662–679.<br /></li>
+<li>“Privacy Policy URL for Facebook App.” TermsFeed, 29 Oct. 2018, www.termsfeed.com/blog/privacy-policy-url-facebook-app/.<br /></li>
+</ul>
+
+    </section>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="facebook"><a class="icon-facebook" href="https://www.facebook.com/beingbarbarianistough/"> 野人生活也是很耗功夫的</a></section>
+
+  <section class="copyright">&copy; 2020 JoyyyJen</section>
+  <section class="poweredby"><a href="http://thedarkroast.com/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://gohugo.io">Hugo</a>.</section>
+</footer>
+
+
+
+
+    </body>
+</html>

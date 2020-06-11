@@ -9,13 +9,7 @@ menu: "mainmenu"
 
 
 # Hi! I am Joy
-### Professional Introduction
-I am a senior at UIUC majoring in Linguistics, with a minor in Computer Science. My interest and concentration is natural language processing (NLP). I am currently applying for both graduate school and am looking for jobs related to text processing, information retrieval, or linguistic analysis. I’ve had internships in semantics annotation at Glossika, a company that provides language acquisition strategies for beginner and advanced language learner. I am currently interning on campus for NCSA SPIN program. The topic of my intern research is Speech-to-Text Auto Captioning. 
 
-In addition, I am one of the co-presidents in Taiwanese Student Association at UIUC. I am supervising public relation, marketing, technology, corporate, and graduate departments. 
-
-If you are also working on speech recognition, here is my recipe of my current project: https://joyyyjen.github.io/notebook-web/
-### Unprofessional Introduction
 **##Where am I from?** 
 Taiwan ✈️ the U.S. / International Student
 來自台灣，在美國留學中<br>

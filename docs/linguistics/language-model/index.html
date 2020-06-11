@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="/img/dp.png" type="image/x-icon" />
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-113303558-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-113303558-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+    <title>
+      
+      Language Model - JoyyyJen
+      
+    </title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Caveat|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="page-template">
+        <header class="main-header">
+
+	<div class="main-header-content">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           JoyyyJen
+				
+			</a>
+		</h1>
+		<h2 class="blog-description">四處瞧瞧，寫寫看看，就醉了</h2>
+	</div>
+
+	<div class="nav">
+    
+		
+      <a class="nav- " role="presentation" href="/">About Me</a>
+		
+      <a class="nav- " role="presentation" href="/linguistics/">Linguistics</a>
+		
+      <a class="nav- " role="presentation" href="/note/">Notes</a>
+		
+      <a class="nav- " role="presentation" href="/poem/">Poems</a>
+		
+		<a class="nav- " role="presentation" href="http://portfolio.ajoy.me/">Portfolio</a>
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post page">
+    <header class="post-header">
+      <h2 class="post-title">Language Model</h2>
+    </header>
+    <section class="post-content">
+      <p>1954 年的時候，IBM-Georgetown 展示了他們機器翻譯，就此，掀起了機器翻譯的熱潮。這股熱潮，最終被1966年的ALPAC Report 終結，直到研究人員開始使用統技方法取代基於規則方法。然後，早在1949年，就有學者提出多語義的解決辦法。瓦倫·韋弗在他1949年備忘錄提到：<br />
+&gt; If one examines the words in a book, one at a time through an opaque mask with a hole in it one word wide, then it is obviously impossible to determine, one at a time, the meaning of words. 'Fast' may mean 'rapid'; or it may mean 'motionless'; and there is no way of telling which. &quot;But, if one lengthens, the slit in the opaque mask, until one can see not only the central word in question but also say N words on either side, then if N is large enough one can unambiguously decide the meaning...&quot;</p>
+
+<ul>
+<li>讓我們做個小活動，猜猜下個字是什麼？<br />
+我今＿<br />
+我今天吃＿<br />
+我今天吃了一整＿<br />
+我今天吃了一整碗湯。<br />
+你看出了什麼？<br />
+<br /></li>
+</ul>
+
+<p>我們可以用前文推測出下個字出現的是什麼。 原本我們理解一個句子，需要知道範圍，知道句法，知道字義，但其實這些都可以以簡單的統計技巧推測出。</p>
+
+<h3 id="n-grams">N-Grams</h3>
+
+<p>N-grams are token sequences of length N.<br />
+那麼 bigrams or 2-grams 就是 &lt;我今&gt;,&lt;今天&gt;,&lt;天吃&gt;,&lt;吃了&gt;, ....<br />
+這代表，當們我知道某長度的字串出現在2-gram裡的次數時，我們可以計算他出現的機率，從而計算整行句子的可能性。<br />
+例如：<br />
+&lt;今天&gt;出現的比率比&lt;今夏&gt;高，因此，我今＿，空格裡的字較有可能是「天」。</p>
+
+<h3 id="language-model-語言模型">Language Model 語言模型</h3>
+
+<p>預測一個字出現的機率是：<br />
+P(W<em>{n}|W</em>{1},W<em>{2}... W</em>{n-1})<br />
+我們稱這種統計式為語言模型</p>
+
+<p>計算&quot;The big dog&quot;的機率是: P(The^big^dog)<br />
+<img src="/lang-model.png" alt="img1" /></p>
+
+<ul>
+<li>1-grams(Unigrams): P(dog)<br /></li>
+<li>Bigrams: P(dog|big)<br /></li>
+<li>Trigrams: P(dog|the big)<br /></li>
+<li>Quadrigrams: P(dog|the big fat)<br />
+<br /></li>
+</ul>
+
+<p>假設我們不考慮前後文，一個字出現的機率是: 1/(numbers of token)</p>
+
+<p>因此，語言模型給出的更加理想：<img src="/equation.png" alt="img2" /></p>
+
+<p>P(the big dog barks) = P(the)*P(big|the)*P(dog|the big)*P(barks| the big dog)</p>
+
+<p>當然這樣的計算是有問題的，因為當我們說一句話，這句話完完全全重複的機率不高，尤其一個句子相當長的時候。我們不能完全依靠字串前出現的所有字，但我們可以簡化到 bigram, trigrams, 或者4-grams, 5 grams。只看該字的前2-5字。<br />
+當然，這不是最完善。就像英文有長距語義關聯。例如：&quot;The computer which I had just put into the machine room on the 5th floor crashed.&quot;<br />
+我們先優先不考慮這些問題;</p>
+
+<p>從 N-grams probabilities我們可以得到一些語言的現象。</p>
+
+<ul>
+<li><strong>World knowledge</strong> P(english|want) = 0.0011 P(Chinese|want) = 0.0065<br />
+-- want Chinese food 的機率比want English大<br /></li>
+<li><strong>語法</strong> P(to|want) = 0.66 P(eat|to) = 0.28 P(food|to) = 0<br /></li>
+<li><strong>Discourse</strong> P(want|spend) = 0 P(i|&lt;s&gt;) = 0.25<br />
+<br /></li>
+</ul>
+
+<h3 id="評估n-gram模型">評估N-Gram模型</h3>
+
+<h4 id="外在評估-extrinsic-evaluation">外在評估(Extrinsic Evaluation ):</h4>
+
+<ul>
+<li>Evaluate the performance of the application with model A<br /></li>
+<li>Put Model A into an application: a speech recognizer; MT system<br />
+・ Get performance for model A:<br />
+・ How many words were translated correctly?<br />
+・ How many misspelled words were corrected properly?<br />
+然而外在評估因為是real-world test，可能一個實驗就要跑上好幾天。因此有個替代方案 - 內在評估<br />
+<br /></li>
+</ul>
+
+<h4 id="內在評估-intrinsic-evaluation-又稱為perplexity">內在評估 (Intrinsic Evaluation): 又稱為Perplexity</h4>
+
+<ul>
+<li>Evaluate the performance independent of any application.<br /></li>
+<li>perplexity is a poor approximation unless the test data looks just like the training data<br />
+<br /></li>
+</ul>
+
+<h4 id="評估基本步驟">評估基本步驟:</h4>
+
+<ol>
+<li>Train parameters of our model on a training set<br /></li>
+<li>Use a test test: use data we haven't seen<br /></li>
+<li>Use a evaluation metric to tell us how well our model is doin gon the test set. - one such metric is perplexity<br />
+<br /></li>
+</ol>
+
+<h3 id="smoothing">Smoothing</h3>
+
+<p>Back to Shakespeare: Recall that Shakespeare produced 300,000 bigram types out of v^2 = 844 million possible bigrams So, 99.96% of the possible bigrams were never seen. But it does not mean any sentence that contains one of those bigrams should have a probability of 0.<br />
+Some of those zeros are really zeros:(ungrammatical). On the other hand, some of them are just rare event.<br />
+If the training corpus had been a little bigger they would have had a count.  Our estimates are sparse! We have no counts at all for the bast bulk of things we want to estimate!</p>
+
+<p>Answer: estimate the likelihood of unseen N-grams</p>
+
+<h4 id="laplace-smoothing-add-one-smoothing">Laplace Smoothing - add one smoothing</h4>
+
+<p>intuition, just add one to all the counts<br />
+MLE estimate: P(wi) = ci/N<br />
+Laplace estimate: P(wi) = ci+1 / N+V<br />
+Reconstructed count:<br />
+- ci* = (ci+1)*N/N+V<br />
+- V is word type<br />
+- ci is count of word i<br />
+- N is number of token</p>
+
+<h3 id="better-smoothing">Better Smoothing</h3>
+
+<h4 id="good-turing">Good-Turing</h4>
+
+<p>Good Turing Kneser-Ney Written-Bell - to use the count of things we've seen once to help estimate the count of things we've never seen</p>
+
+<p>假設你在釣魚。這裡有八種魚：carp, perch, whitefish, trout, salmon, eel, catfish, bass. 你已經釣過: 10 carp, 3 perch, 2 whitefist, 1 trout, 1 salmom, 1 eel = 18 fish<br />
+有多少可能性，你釣到的下條魚是你沒釣過的魚? 3/18<br />
+有多少可能性，你釣到的下條魚是一條trout? Maybe less then 1/18</p>
+
+<p>Notation: Nx is the frequency-of-frequency-x<br />
+- N10 = 1 : number of fish species seen 10 times is 1<br />
+- N1 = 3 number of fish species seen 1 is 3<br />
+- To estimate total number of unseen species c0* = c1 po = N1/N = 3/18 c* = (c+1)*Nc+1/ NC</p>
+
+<h3 id="backoff-vs-interpolation">Backoff vs.Interpolation</h3>
+
+<ul>
+<li>Backoff: use trigram if you have it, otherwise bigram, otherwise unigram<br /></li>
+<li>Interpolation: mix all three<br />
+<br /></li>
+</ul>
+
+<h3 id="oov-out-of-vocabulary-oov-words">OOV-out of vocabulary = OOV words</h3>
+    </section>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="facebook"><a class="icon-facebook" href="https://www.facebook.com/beingbarbarianistough/"> 野人生活也是很耗功夫的</a></section>
+
+  <section class="copyright">&copy; 2020 JoyyyJen</section>
+  <section class="poweredby"><a href="http://thedarkroast.com/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://gohugo.io">Hugo</a>.</section>
+</footer>
+
+
+
+
+    </body>
+</html>

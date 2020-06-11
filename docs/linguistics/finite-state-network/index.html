@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="/img/dp.png" type="image/x-icon" />
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-113303558-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-113303558-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+    <title>
+      
+      Finite State Network - JoyyyJen
+      
+    </title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Caveat|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="page-template">
+        <header class="main-header">
+
+	<div class="main-header-content">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           JoyyyJen
+				
+			</a>
+		</h1>
+		<h2 class="blog-description">四處瞧瞧，寫寫看看，就醉了</h2>
+	</div>
+
+	<div class="nav">
+    
+		
+      <a class="nav- " role="presentation" href="/">About Me</a>
+		
+      <a class="nav- " role="presentation" href="/linguistics/">Linguistics</a>
+		
+      <a class="nav- " role="presentation" href="/note/">Notes</a>
+		
+      <a class="nav- " role="presentation" href="/poem/">Poems</a>
+		
+		<a class="nav- " role="presentation" href="http://portfolio.ajoy.me/">Portfolio</a>
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post page">
+    <header class="post-header">
+      <h2 class="post-title">Finite State Network</h2>
+    </header>
+    <section class="post-content">
+      <h3 id="finite-state-network-有限狀態機">Finite-State Network 有限狀態機</h3>
+
+<p>有限狀態機在詞法學上的應用：<br />
+- Finite-state Tokenizer<br />
+- Finite-state morphological analyzer/generators(Lexical Transducer)<br />
+- Finite-state post of speech tagger<br />
+- Finite-state shallow syntactic parser</p>
+
+<ul>
+<li>so called : <strong>Finite-State Automaton</strong> (plural automata)<br /></li>
+<li>It consists of <strong>states</strong> and <strong>arcs</strong>, has a single designed <strong>start state</strong> and any number (zero or more) <strong>final state</strong><br /></li>
+<li>Final state is the accepting state.<br />
+<br /></li>
+</ul>
+
+<p><img src="/FSA.png" alt="img1" /><br />
+- O is the start state<br />
+- 25 is the end state (double circle)</p>
+
+<h3 id="symbols-alphabet-words-language">Symbols / Alphabet / Words / Language</h3>
+
+<ul>
+<li><strong>Symbol:</strong> The input to the machine (&quot;0&quot;,&quot;25&quot; from image 1)<br /></li>
+<li><strong>Alphabet:</strong> The set of valid symbols that the machine will accept<br /></li>
+<li><strong>Words:</strong> The sequence of symbols that the machine will accept<br /></li>
+<li><strong>Language:</strong> The entire set of words that the machine accepts or recognizes<br />
+<br /></li>
+</ul>
+
+<p><strong>regular language</strong>: language that FSA can recognize / can be represented by regular expression<br />
+<strong>regular expression</strong>: a sequence of characters that define a search pattern<br />
+epsilon symbol: the empty string, transition without any symbol being consumed</p>
+
+<h3 id="actions-of-fsa">Actions of FSA</h3>
+
+<h4 id="analysis-generation">Analysis &amp; Generation</h4>
+
+<ul>
+<li>analysis: look up, symbol matching. The (surface form)lower form to the upper(underlying form).<br /></li>
+<li>generate: use analysis string(upper) to generate surface strings(lower)<br />
+<br /></li>
+</ul>
+
+<h4 id="transition-consume">Transition &amp; Consume</h4>
+
+<ul>
+<li>(0 &rarr; 25)<br /></li>
+<li>transition: the network machine moves to the new state<br /></li>
+<li>0 is consumed<br />
+<br /></li>
+</ul>
+
+<h3 id="finite-state-transducer">Finite State Transducer</h3>
+
+<ul>
+<li>a <strong>transducer</strong> is a device that converts energy from one form to another<br /></li>
+<li>microphone is a transducer that converts physical vibrations of air into analogous electrical signals<br /></li>
+<li>upper side: input<br /></li>
+<li>lower side: output<br /></li>
+<li>Looks similar to FSA, except it has upper side and lower side.<br /></li>
+<li>usually looks like ?:? (? means any symbol, : is mapping)<br />
+<br />
+<br /></li>
+</ul>
+
+<h3 id="tools">Tools:</h3>
+
+<ul>
+<li><a href="https://github.com/mhulden/foma/blob/master/foma/docs/simpleintro.md">foma</a>: to do computational morphology<br /></li>
+<li><a href="http://www.graphviz.org/">dot/graphviz</a>: to draw finite state machine<br /></li>
+<li><a href="http://foma.sourceforge.net/dokuwiki/doku.php?id=wiki:regexreference">foma regular expression</a><br /></li>
+</ul>
+    </section>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="facebook"><a class="icon-facebook" href="https://www.facebook.com/beingbarbarianistough/"> 野人生活也是很耗功夫的</a></section>
+
+  <section class="copyright">&copy; 2020 JoyyyJen</section>
+  <section class="poweredby"><a href="http://thedarkroast.com/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://gohugo.io">Hugo</a>.</section>
+</footer>
+
+
+
+
+    </body>
+</html>

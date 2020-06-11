@@ -5,6 +5,8 @@ publishDir = "docs"
 title = "JoyyyJen"
 theme = "arabica"
 sectionPagesMenu = "mainmenu"
+googleAnalytics = "UA-113303558-1"
+disqusShortname = "ajoy-me"
 
 [blackfriday]
     smartypants = false
@@ -18,7 +20,4 @@ sectionPagesMenu = "mainmenu"
     github = "joyyyjen"
     hasCJKLanguage = true
     summarylength = 100
-
-
-
 

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on JoyyyJen</title>
+    <link>/note/</link>
+    <description>Recent content in Notes on JoyyyJen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 09 May 2019 22:45:08 -0500</lastBuildDate>
+    
+	<atom:link href="/note/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Chatbot Ethical Concern</title>
+      <link>/note/chatbot_ethical_concern/</link>
+      <pubDate>Thu, 09 May 2019 22:45:08 -0500</pubDate>
+      
+      <guid>/note/chatbot_ethical_concern/</guid>
+      <description>I have been making a Facebook Fan Page Chatbot using Dexter, a platform people can create automated conversation. The purpose of this robot is to help to answer questions from Taiwanese Students who study at the University of Illinois. It especially targets the frequent ask questions from Taiwanese Student Association Facebook Fan Page.
+There are two common approaches to build a chatbot. Some use natural language processing systems, others use rule-based pattern matching from a database.</description>
+    </item>
+    
+    <item>
+      <title>Ethics 倫理/ 機械論理學</title>
+      <link>/note/ethics/</link>
+      <pubDate>Wed, 20 Feb 2019 22:13:43 -0600</pubDate>
+      
+      <guid>/note/ethics/</guid>
+      <description>&lt;h2 id=&#34;ethics-倫理&#34;&gt;Ethics 倫理&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Computer ethics&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Philosophy&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Robot ethics&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;why-computer-ethics&#34;&gt;Why Computer Ethics?&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;James H. Moor called for the development of a &#39;coherent conceptual framework&#39; to help us deal with the &#39;policy vacuums&#39; created by new informaon technologies.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;All new technologies bring with them new human capabilies, and thus new possibilies for actions that may enhance or harm human (and other senent) beings.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
